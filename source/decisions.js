@@ -9,7 +9,6 @@ if(i==4){
 */
 
 //switch statement
-/*
 let grade = 'A';
 
 switch(grade){
@@ -32,7 +31,7 @@ case 'E':
 default:
     console.log('No result');               
 }
-*/
+
 
 //ternary operator
 
