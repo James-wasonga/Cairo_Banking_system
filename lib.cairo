@@ -24,12 +24,6 @@ mod Bank {
         bankAccounts: Array<BankAccount>
     }
     
-    fn createAccounts(accountName: felt252, ref bank: BankStorage){
-        let mut bankStorage = BankStorage {bankAccounts: ArrayTrait::new()};
-        let account = BankAccount {accountName, bankBalance: 0};
-        bank.bankAccounts.append(account);
-    }
-
     fn displayLength(bank: @BankStorage) -> usize{
         bank.bankAccounts.len()
     }
